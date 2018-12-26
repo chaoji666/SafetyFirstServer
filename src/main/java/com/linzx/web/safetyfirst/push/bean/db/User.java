@@ -1,5 +1,6 @@
 package com.linzx.web.safetyfirst.push.bean.db;
 
+import java.security.Principal;
 import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
@@ -28,7 +29,7 @@ import org.hibernate.annotations.UpdateTimestamp;
  */
 @Entity
 @Table(name = "TB_USER")
-public class User {
+public class User implements Principal{
 
 	// 这是一个主键
 	@Id
