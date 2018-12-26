@@ -7,7 +7,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import com.linzx.web.safetyfirst.push.bean.User;
+import com.linzx.web.safetyfirst.push.bean.db.User;
+
 
 //127.0.0.1/api/account/...
 @Path("/account")
