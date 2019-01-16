@@ -129,6 +129,7 @@ public class UserFactory {
 	 * @return User
 	 */
 	public static User register(String account, String password, String name) {
+		System.out.println("数据库注册操作");
 		// 去除账户中的首位空格
 		account = account.trim();
 		// 处理密码
@@ -138,6 +139,7 @@ public class UserFactory {
 		if (user != null) {
 			user = login(user);
 		}
+		System.out.println(user);
 		return user;
 	}
 

@@ -36,7 +36,7 @@ public class Message {
 	// 避免复杂的服务器和客户端的映射关系
 	// @GeneratedValue(generator = "uuid")
 	// 把uuid的生成器定义为uuid2，uuid2是常规的uuid tostring
-	@GenericGenerator(name = "uuid", strategy = "uuis2")
+	@GenericGenerator(name = "uuid", strategy = "uuid2")
 	// 不允许更改，不允许为null
 	@Column(updatable = false, nullable = false)
 	private String id;

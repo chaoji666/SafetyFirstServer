@@ -37,7 +37,7 @@ public class User implements Principal{
 	// 主键生成存储的类型为uuid
 	@GeneratedValue(generator = "uuid")
 	// 把uuid的生成器定义为uuid2，uuid2是常规的uuid tostring
-	@GenericGenerator(name = "uuid", strategy = "uuis2")
+	@GenericGenerator(name = "uuid", strategy = "uuid2")
 	// 不允许更改，不允许为null
 	@Column(updatable = false, nullable = false)
 	private String id;

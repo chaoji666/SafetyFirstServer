@@ -53,6 +53,7 @@ public class AccountService extends BaseService {
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public ResponseModel<AccountRspModel> register(RegisterModel model) {
+		System.out.println("接收客户端注册请求");
 		if (!RegisterModel.check(model)) {
 			// 返回参数异常
 			return ResponseModel.buildParameterError();
